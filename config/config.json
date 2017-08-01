@@ -1,0 +1,14 @@
+{
+  "development": {
+    "database": "aae_dev",
+    "dialect": "postgres"
+  },
+  "test": {
+    "database": "aae_test",
+    "dialect": "postgres"
+  },
+  "production": {
+    "database": "aae_prod",
+    "dialect": "postgres"
+  }
+}
