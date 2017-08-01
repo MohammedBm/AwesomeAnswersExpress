@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const sassMiddleware = require('node-sass-middleware')
 
 const index = require('./routes/index');
-const users = require('./routes/users');
+const questions = require('./routes/questions');
 
 const app = express();
 
@@ -30,7 +30,7 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+app.use('/questions', questions);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
