@@ -12,6 +12,9 @@ After that we will need to install `nodemon` using yarn, `yarn add nodemon` will
 Â
 Now we will need to create models, to do that we will need to run the following file `sequelize model:create --name Question --attributes title:string,content:text`
 
+<!-- also check package.json file and talk about the scripts that was added -->
+
+
 Next, we will check the `qeustion.js` file. sequelize is no longer supports the way of adding associations to model that was created from the generator. so we will need to comment this code
 ```js
 , {
@@ -48,10 +51,9 @@ module.exports = function(sequelize, DataTypes) {
 };
 ```
 
-After that we will need to run this command `sequelize db:migrate` in the terminal.
+After that we will need to run this command `sequelize db:migrate` in the terminal. Also we will need to add seeds to our file. `faker` is need to be used to create seed, the following command we be used to add the package `yarn add -D faker`. Also we will need to create seed file using this command
 
 
 
-<!-- also check package.json file and talk about the scripts that was added -->
-
-<!-- Todo check file Question.js and add notes about what have changed inside this file  -->
+<!-- sequelize seed:create --name create-questions also check the file that was createdb-->
+<!-- check the file in the seeders and add notes abou it -->
