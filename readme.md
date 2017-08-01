@@ -64,3 +64,4 @@ Now we will need to create a seed file so we can create dummy data `sequelize se
 <!-- sequelize db:seeds:all to craete seeds -->
 
 Then, we will go to `routes/user.js` and change the name to `questions.js`. Also we will need to go to `app.js` and change everything from `users` to `questions`. After that we will go pack to our `routes/questions.js` and require the `Question` model by using this line `const {Question} = require('questions')`
+<!-- check the file in the seeders and add notes abou it -->
