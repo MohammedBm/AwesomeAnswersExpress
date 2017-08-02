@@ -65,3 +65,19 @@ Now we will need to create a seed file so we can create dummy data `sequelize se
 
 Then, we will go to `routes/user.js` and change the name to `questions.js`. Also we will need to go to `app.js` and change everything from `users` to `questions`. After that we will go pack to our `routes/questions.js` and require the `Question` model by using this line `const {Question} = require('questions')`
 <!-- check the file in the seeders and add notes abou it -->
+
+<hr>
+
+To add a new router we need to add the following code in our `routers/questions`
+```js
+
+router.get('/new',(req,res,next)=>{
+  res.render('questions/new')
+})
+
+```
+Also we will create a new file in our `views/questions` and put the following code inside it.
+```js
+
+
+```
